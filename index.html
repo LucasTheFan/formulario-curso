@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario-nota</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="header"> 
+          <div class="main">
+            <form method="POST" action="send.php" onsubmit="return check_form()">
+                <label>Nome: </label><input type="text" maxlength="40" name="nome" id="nome"><BR>
+                    <label>Telefone: </label>
+                <input type="number" maxlength="12" name="telefone" id="telefone" placeholder="11999999999"><BR>
+                <label>Gênero:</label><BR>
+                <input type="radio" name="genero" value="Masculino" id="rGenero1"><label> :Masculino| </label>
+                <input type="radio" name="genero" value="Feminino" id="rGenero2"><label> :Feminino| </label>
+                <input type="radio" name="genero" value="Outro" id="rGenero3"><label> :Outro</label><BR>
+                    <label>Mensagem</label>
+                <textarea  name="Mensagem" id="Mensagem" maxlength="1000" rows="4" cols="50"></textarea> <BR>
+                    <input type="submit" value="Enviar" id="form_button"> 
+                <label>Escolha seu tipo de Contato</label>
+                <select name="TipodeContato" id="TipodeContato">
+                    <option value="0" selected>Tipos de Contato</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="sugestao">Sugestão</option>   
+                    <option value="critica">Crítica</option>       
+                </select><BR><BR>
+                 
+            </form>
+        </div>
+        <div class="rosa">
+            <div class="violeta"></div>
+        </div>    
+    </div>
+</div> 
+    <script src="script.js"></script>
+</body>
+</html>
